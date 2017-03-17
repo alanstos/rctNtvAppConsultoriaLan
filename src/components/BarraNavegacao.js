@@ -23,11 +23,14 @@ export default class BarraNavegacao extends Component {
 
       return (
         <View style={ [styles.barra, { backgroundColor: this.props.colorFundo }]}>
-        
+
           <StatusBar hidden={false} backgroundColor={ this.props.colorFundo }/>      
 
           <View style={ styles.barraTitulo}>
-            <TouchableHighlight style={ styles.iconVoltar } onPress={ () => { this.props.navigator.pop() } }>
+            <TouchableHighlight style={ styles.iconVoltar } onPress={ () => { this.props.navigator.pop() } }
+              activeOpacity={0.2}
+              underlayColor={this.props.colorFundo}
+            >
               <Image source={ imgVoltar } />
             </TouchableHighlight>
             <Text style={ styles.titulo}>Consultoria Lan</Text>

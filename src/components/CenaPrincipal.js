@@ -28,20 +28,32 @@ export default class CenaPrincipal extends Component {
         </View>
         <View style={ styles.cards }>
 
-          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:1}); } } >
+          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:1}); } } 
+              activeOpacity={0.5}
+              underlayColor={'#fff'}
+          >
             <Image style={ styles.cardIcone } source={menuCliente} />
           </TouchableHighlight>
-          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:2}); } } >
+          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:2}); } } 
+              activeOpacity={0.5}
+              underlayColor={'#fff'}
+          >
             <Image style={ styles.cardIcone } source={menuContato} />
           </TouchableHighlight>          
         </View>          
         <View style={ styles.cards }>
 
-          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:3}); } } >
+          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:3}); } } 
+              activeOpacity={0.5}
+              underlayColor={'#fff'}
+          >
             <Image style={ styles.cardIcone } source={menuEmpresa} />
           </TouchableHighlight>
 
-          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:4}); } } >
+          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:4}); } } 
+              activeOpacity={0.5}
+              underlayColor={'#fff'}
+          >
             <Image style={ styles.cardIcone } source={menuServico} />
           </TouchableHighlight>
         </View>
