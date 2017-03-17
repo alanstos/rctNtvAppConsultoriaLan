@@ -4,7 +4,8 @@ import {
   Text,
   View,
   Image,
-  ScrollView
+  ScrollView,
+  TouchableHighlight 
 } from 'react-native';
 
 import BarraNavegacao from './BarraNavegacao';
@@ -20,14 +21,19 @@ export default class CenaPrincipal extends Component {
     return (
       <ScrollView>
 
-        <BarraNavegacao />
+        <BarraNavegacao voltar={false } />
 
         <View style={ styles.main }>
           <Image source={logo} />
         </View>
         <View style={ styles.cards }>
-          <Image style={ styles.cardIcone } source={menuCliente} />
-          <Image style={ styles.cardIcone } source={menuContato} />
+
+          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:1}); } } >
+            <Image style={ styles.cardIcone } source={menuCliente} />
+          </TouchableHighlight>
+          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:2}); } } >
+            <Image style={ styles.cardIcone } source={menuContato} />
+          </TouchableHighlight>          
         </View>          
         <View style={ styles.cards }>
           <Image style={ styles.cardIcone } source={menuEmpresa} />
