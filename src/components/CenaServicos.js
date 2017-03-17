@@ -14,7 +14,7 @@ const imgServico = require('../imgs/menu_servico.png');
 class CenaServicos extends Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={ styles.cena }>
 
         <BarraNavegacao voltar={true} navigator={ this.props.navigator } />
 
@@ -32,6 +32,10 @@ class CenaServicos extends Component {
 export default CenaServicos;
 
 const styles = StyleSheet.create({
+  cena: {
+    flex: 1,
+    backgroundColor: '#fff'
+  },
   viewTitulo : {
     flexDirection: 'row',
     marginTop: 10

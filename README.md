@@ -11,3 +11,5 @@
 >>>cliente1
 >>>cliente2
 
+melhorando a transicao com flex:1 e backgroundColor: #fff
+

@@ -14,7 +14,7 @@ const imgEmpresa = require('../imgs/menu_empresa.png');
 class CenaEmpresa extends Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={ styles.cena }>
 
         <BarraNavegacao voltar={true} navigator={ this.props.navigator } />
 
@@ -32,6 +32,10 @@ class CenaEmpresa extends Component {
 export default CenaEmpresa;
 
 const styles = StyleSheet.create({
+  cena: {
+    flex: 1,
+    backgroundColor: '#fff'
+  },  
   viewTitulo : {
     flexDirection: 'row',
     marginTop: 10

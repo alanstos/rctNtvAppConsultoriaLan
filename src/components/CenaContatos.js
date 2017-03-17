@@ -14,7 +14,7 @@ const imgContato = require('../imgs/detalhe_contato.png');
 class CenaContatos extends Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView style={ styles.cena }>
 
         <BarraNavegacao voltar={true} navigator={ this.props.navigator } />
 
@@ -32,6 +32,10 @@ class CenaContatos extends Component {
 export default CenaContatos;
 
 const styles = StyleSheet.create({
+  cena: {
+    flex: 1,
+    backgroundColor: '#fff'
+  },  
   viewTitulo : {
     flexDirection: 'row',
     marginTop: 10
