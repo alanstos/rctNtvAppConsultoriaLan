@@ -16,7 +16,7 @@ class CenaServicos extends Component {
     return (
       <ScrollView style={ styles.cena }>
 
-        <BarraNavegacao voltar={true} navigator={ this.props.navigator } />
+        <BarraNavegacao voltar={true} navigator={ this.props.navigator } colorFundo={ '#19d1c8' }  />
 
         <View style={ styles.viewTitulo }>
           <Image source={imgServico} />

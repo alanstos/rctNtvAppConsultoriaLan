@@ -13,3 +13,6 @@
 
 melhorando a transicao com flex:1 e backgroundColor: #fff
 
+propriedade style aceita um array de estilos
+style={[ styles.XPTO, {color: 'red'} ]}
+

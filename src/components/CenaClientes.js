@@ -19,7 +19,7 @@ export default class CenaClientes extends Component {
     return (
       <ScrollView style={ styles.cena }>
 
-        <BarraNavegacao voltar={true} navigator={ this.props.navigator } />
+        <BarraNavegacao voltar={true} navigator={ this.props.navigator } colorFundo={ '#B9C941' } />
 
         <View style={ styles.viewTitulo }>
           <Image source={cliente} />

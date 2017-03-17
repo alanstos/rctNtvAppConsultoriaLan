@@ -16,7 +16,7 @@ class CenaEmpresa extends Component {
     return (
       <ScrollView style={ styles.cena }>
 
-        <BarraNavegacao voltar={true} navigator={ this.props.navigator } />
+        <BarraNavegacao voltar={true} navigator={ this.props.navigator } colorFundo={ '#EC7148' } />
 
         <View style={ styles.viewTitulo }>
           <Image source={imgEmpresa} />
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   titulo: {
     fontSize:22,
-    color: '#ecd1c8',
+    color: '#EC7148',
     fontWeight : 'bold',
     paddingTop: 30,
     paddingLeft: 30

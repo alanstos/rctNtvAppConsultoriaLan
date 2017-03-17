@@ -16,7 +16,7 @@ class CenaContatos extends Component {
     return (
       <ScrollView style={ styles.cena }>
 
-        <BarraNavegacao voltar={true} navigator={ this.props.navigator } />
+        <BarraNavegacao voltar={true} navigator={ this.props.navigator } colorFundo={ '#61BD8C' }/>
 
         <View style={ styles.viewTitulo }>
           <Image source={imgContato} />
