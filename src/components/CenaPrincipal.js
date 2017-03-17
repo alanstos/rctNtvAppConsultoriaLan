@@ -21,7 +21,7 @@ export default class CenaPrincipal extends Component {
     return (
       <ScrollView>
 
-        <BarraNavegacao voltar={false } />
+        <BarraNavegacao  />
 
         <View style={ styles.main }>
           <Image source={logo} />
@@ -36,8 +36,14 @@ export default class CenaPrincipal extends Component {
           </TouchableHighlight>          
         </View>          
         <View style={ styles.cards }>
-          <Image style={ styles.cardIcone } source={menuEmpresa} />
-          <Image style={ styles.cardIcone } source={menuServico} />
+
+          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:3}); } } >
+            <Image style={ styles.cardIcone } source={menuEmpresa} />
+          </TouchableHighlight>
+
+          <TouchableHighlight onPress={ () => { this.props.navigator.push({index:4}); } } >
+            <Image style={ styles.cardIcone } source={menuServico} />
+          </TouchableHighlight>
         </View>
         
       </ScrollView>
