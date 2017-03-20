@@ -61,7 +61,7 @@ export default class CenaPrincipal extends Component {
       </ScrollView>
     );
   }
-}
+}1
 
 const styles = StyleSheet.create({
   main: {
